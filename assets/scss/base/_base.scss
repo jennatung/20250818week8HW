@@ -1,0 +1,29 @@
+
+@mixin breakpoints-lg{
+  @media(min-width: 992px){
+    @content;
+  }
+}
+
+@mixin desktop{
+  @media(min-width: 768px){
+    @content;
+  }
+}
+
+body{
+  letter-spacing: 0.02em;
+}
+
+ul,li{
+  margin: 0;
+  padding: 0;
+}
+
+main{
+    padding-top: 64px;
+    @include breakpoints-lg{
+        padding-top: 74px;
+    }
+}
+

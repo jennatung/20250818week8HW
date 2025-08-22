@@ -1,0 +1,25 @@
+$utilities: map-merge(
+  $utilities,
+  (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: map-merge(
+        map-get(map-get($utilities, "rounded"), values),
+        (
+          6: $border-radius-xxxl
+        )
+      )
+    )
+  )
+);

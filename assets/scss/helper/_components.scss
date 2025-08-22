@@ -1,0 +1,15 @@
+//手機版-黃金比例容器
+.aspect-ratio{
+    object-fit: cover;
+    aspect-ratio: 1.618/1;
+    @include desktop{
+        aspect-ratio: auto;
+    }
+}
+
+// Poppins字型
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
