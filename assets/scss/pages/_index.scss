@@ -1,35 +1,35 @@
-.banner{
+.banner {
   background-image: url(../images/index/hero-bg.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   padding-top: 48px;
   min-height: 480px;
-  @include desktop{
+  @include desktop {
     padding-top: 212px;
     min-height: 92vh;
   }
 }
 
-.recommend{
-  background-color: #221F1E;
-  .card{
+.recommend {
+  background-color: #221f1e;
+  .card {
     width: 277px;
-    @include desktop{
+    @include desktop {
       width: 25%;
       max-width: 416px;
       height: 600px;
       transition: width 0.5s;
-      &:hover{
+      &:hover {
         width: 100%;
       }
     }
   }
 }
 
-.recommend-btn{
+.recommend-btn {
   display: block;
-  @include desktop{
+  @include desktop {
     display: none;
   }
 }
@@ -38,28 +38,27 @@
   display: block;
 }
 
-.offset-row{
-  @include desktop{
+.offset-row {
+  @include desktop {
     transform: translateX(80px);
   }
 }
 
-.index-section3-bg{
-  @include desktop{
-    background-image: url(../assets/images/index/deco-bg.svg); 
+.index-section3-bg {
+  @include desktop {
+    background-image: url(../images/index/deco-bg.svg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: contain;
   }
 }
 
-
-.horizontal-md-card{
+.horizontal-md-card {
   width: 312px;
   img {
     height: 200px;
   }
-  @include desktop{
+  @include desktop {
     width: 746px;
     img {
       width: 300px;
@@ -68,30 +67,28 @@
   }
 }
 
-.horizontal-cardlayer{
+.horizontal-cardlayer {
   margin-top: 40px;
-  @include desktop{
+  @include desktop {
     margin-top: 80px;
   }
 }
-
 
 .poppins-regular-italic {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: italic;
   font-size: 100px;
-  color: #DFD2CD;
+  color: #dfd2cd;
   position: absolute;
   left: 16px;
   top: 0;
   transform: translateY(-50%);
-  @include desktop{
+  @include desktop {
     font-size: 200px;
     left: 20px;
   }
 }
-
 
 .swiper-pagination-bullet {
   width: 8px;
@@ -108,52 +105,56 @@
   background: $primary;
 }
 
-.text-dialog{
+.text-dialog {
   width: 130px;
   height: auto;
   top: 1%;
   left: 40%;
-  @include desktop{
+  @include desktop {
     width: 172px;
     top: 12%;
     left: 34%;
   }
 }
 
-.img-hash{
+.img-hash {
   top: 0;
   left: 0;
-  transform: translate(-40%,-40%);
+  transform: translate(-40%, -40%);
   width: 44px;
   height: auto;
-  @include desktop{    
+  @include desktop {
     width: 103px;
   }
 }
 
-.fixed-card{
+.fixed-card {
   width: 306px;
-  span{
-    background-color: rgba(0,0,0,0.4);
-    border-radius: 0 20px 0 20px;
+}
+
+.fixed-card-btn span {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0 20px 0 20px;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.6);
   }
 }
 
-.fixed-card-btn{
+.fixed-card-btn {
   top: 60%;
-  &-left{
+  &-left {
     left: 0;
     transform: translateX(-100%);
   }
-  &-right{
+  &-right {
     right: 0;
     transform: translateX(100%);
   }
 }
 
-.marquee{
+.marquee {
   overflow: hidden;
-  p{
+  p {
     font-family: "Poppins", serif;
     font-size: 32px;
     font-weight: bold;
@@ -163,17 +164,17 @@
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-    animation-timing-function: linear; 
-    
-    @include desktop{
+    animation-timing-function: linear;
+
+    @include desktop {
       font-size: 120px;
     }
-    
-    @keyframes marquee{
-      from{
+
+    @keyframes marquee {
+      from {
         transform: translateX(-10%);
       }
-      to{
+      to {
         transform: translateX(0%);
       }
     }

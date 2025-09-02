@@ -4,38 +4,76 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">    
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <title>ZOBAA! 旅行推薦平台</title>
   </head>
   <body>
     <%- include('./layout/header'); -%>
 
     <main>
-
       <section class="banner">
         <div class="container">
           <div class="d-flex flex-column align-items-start">
-            <h2 class="fs-7 fs-md-6 fw-bold text-primary bg-primary-10 rounded-4 p-2 p-md-5 lh-base mb-4">ZOBAA 旅行推薦平台</h2>
+            <h2
+              class="fs-7 fs-md-6 fw-bold text-primary bg-primary-10 rounded-4 p-2 p-md-5 lh-base mb-4"
+            >
+              ZOBAA 旅行推薦平台
+            </h2>
             <h1 class="fw-bold fs-3 fs-md-0 text-primary mb-2 mb-md-7">
               <span class="d-block d-md-inline">用旅行，</span>
               <span>收藏世界的樣子</span>
             </h1>
-            <h3 class="fs-8 fs-md-6 fw-bold text-primary-80 mb-7 mb-md-10 lh-base">ZOBAA 整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。</h3>
+            <h3
+              class="fs-8 fs-md-6 fw-bold text-primary-80 mb-7 mb-md-10 lh-base"
+            >
+              ZOBAA
+              整合熱門景點推薦、即時優惠、獨家行程，從比價到訂購，一次完成你的完美出遊計畫。
+            </h3>
           </div>
           <div class="row">
             <div class="col-md-7">
               <form class="position-relative">
-                <span class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-2 text-neutral-60">search</span>
-                <input type="search" class="form-control rounded-5 py-6 ps-10" placeholder="搜尋景點、地點或城市">
-                <button type="button" class="btn btn-primary py-4 px-5 position-absolute position-absolute top-50 end-0 translate-middle-y rounded-4 me-2">開始探索旅程</button>
-              </form>    
+                <span
+                  class="material-icons-outlined align-bottom position-absolute top-50 start-0 translate-middle-y ps-2 text-neutral-60"
+                  >search</span
+                >
+                <input
+                  type="search"
+                  class="form-control rounded-5 py-6 ps-10"
+                  placeholder="搜尋景點、地點或城市"
+                />
+                <button
+                  type="button"
+                  class="btn btn-primary py-4 px-5 position-absolute position-absolute top-50 end-0 translate-middle-y rounded-4 me-2"
+                >
+                  開始探索旅程
+                </button>
+              </form>
             </div>
           </div>
         </div>
@@ -43,85 +81,157 @@
 
       <section class="recommend pt-md-11 pt-10 pb-11 pb-md-12">
         <!-- 標題 -->
-        <div class="container text-white mb-10 d-md-flex justify-content-md-between align-items-md-center">
-          <h3 class="mb-7 mb-md-0 fw-bold fs-3 fs-md-0">你的<br>專屬推薦</h3>
+        <div
+          class="container text-white mb-10 d-md-flex justify-content-md-between align-items-md-center"
+        >
+          <h3 class="mb-7 mb-md-0 fw-bold fs-3 fs-md-0">你的<br />專屬推薦</h3>
           <div class="fw-bold">
-            <p class="mb-4 mb-md-7 fs-md-6 fs-8 lh-base">來看我們的精選推薦行程，滿意度高達 99.2%<br>給自己一個難忘的旅遊行程吧！</p>
+            <p class="mb-4 mb-md-7 fs-md-6 fs-8 lh-base">
+              來看我們的精選推薦行程，滿意度高達 99.2%<br />給自己一個難忘的旅遊行程吧！
+            </p>
             <a href="#" class="text-white fs-md-7 lh-base fs-8">
               查看全部行程
-              <span class="material-icons-outlined align-middle ms-2">arrow_forward</span>
+              <span class="material-icons-outlined align-middle ms-2"
+                >arrow_forward</span
+              >
             </a>
           </div>
         </div>
         <!-- 卡片 -->
         <div class="container d-flex gap-md-7 gap-5 overflow-x-auto">
           <!-- 卡片1 -->
-          <div class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1">
-            <img src="../assets/images/index/recommend.png" class="card-img h-100 object-fit-cover" alt="峇里島渡假漫遊">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <div
+            class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1"
+          >
+            <img
+              src="../assets/images/index/recommend.png"
+              class="card-img h-100 object-fit-cover"
+              alt="峇里島渡假漫遊"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
               <h4 class="mb-2">峇里島渡假漫遊</h4>
-              <p class="mb-7">精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。</p>
+              <p class="mb-7">
+                精選五星級海灘度假村，專屬私人管家服務，讓您徹底放鬆身心。
+              </p>
               <div class="recommend-btn">
-                <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between recommend-btn w-100">
+                <button
+                  type="button"
+                  class="btn btn-light p-6 rounded-pill d-flex justify-content-between recommend-btn w-100"
+                >
                   訂購行程
-                  <span class="material-icons-outlined align-middle ms-2">arrow_forward</span>
+                  <span class="material-icons-outlined align-middle ms-2"
+                    >arrow_forward</span
+                  >
                 </button>
               </div>
             </div>
           </div>
           <!-- 卡片2 -->
-          <div class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1">
-            <img src="../assets/images/index/recommend-1.png" class="card-img h-100 object-fit-cover" alt="日本深度賞櫻計畫">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <div
+            class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1"
+          >
+            <img
+              src="../assets/images/index/recommend-1.png"
+              class="card-img h-100 object-fit-cover"
+              alt="日本深度賞櫻計畫"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
               <h4 class="mb-2">日本深度賞櫻計畫</h4>
-              <p class="mb-7">春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。</p>
+              <p class="mb-7">
+                春季限定，東京、京都、大阪賞櫻之旅，體驗日本文化的精髓。
+              </p>
               <div class="recommend-btn">
-                <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between recommend-btn w-100">
+                <button
+                  type="button"
+                  class="btn btn-light p-6 rounded-pill d-flex justify-content-between recommend-btn w-100"
+                >
                   訂購行程
-                  <span class="material-icons-outlined align-middle ms-2">arrow_forward</span>
+                  <span class="material-icons-outlined align-middle ms-2"
+                    >arrow_forward</span
+                  >
                 </button>
               </div>
             </div>
           </div>
           <!-- 卡片3 -->
-          <div class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1">
-            <img src="../assets/images/index/recommend-2.png" class="card-img h-100 object-fit-cover" alt="紐西蘭雪山探險">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <div
+            class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1"
+          >
+            <img
+              src="../assets/images/index/recommend-2.png"
+              class="card-img h-100 object-fit-cover"
+              alt="紐西蘭雪山探險"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
               <h4 class="mb-2">紐西蘭雪山探險</h4>
-              <p class="mb-7">探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。</p>
+              <p class="mb-7">
+                探索南島壯麗的自然風光，體驗各種極限運動和戶外活動。
+              </p>
               <div class="recommend-btn">
-                <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between recommend-btn w-100">
+                <button
+                  type="button"
+                  class="btn btn-light p-6 rounded-pill d-flex justify-content-between recommend-btn w-100"
+                >
                   訂購行程
-                  <span class="material-icons-outlined align-middle ms-2">arrow_forward</span>
+                  <span class="material-icons-outlined align-middle ms-2"
+                    >arrow_forward</span
+                  >
                 </button>
               </div>
             </div>
           </div>
           <!-- 卡片4 -->
-          <div class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1">
-            <img src="../assets/images/index/recommend-3.png" class="card-img h-100 object-fit-cover" alt="摩洛哥迷幻之旅">
-            <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <div
+            class="card text-bg-dark rounded-6 overflow-hidden flex-shrink-0 flex-md-shrink-1"
+          >
+            <img
+              src="../assets/images/index/recommend-3.png"
+              class="card-img h-100 object-fit-cover"
+              alt="摩洛哥迷幻之旅"
+            />
+            <div
+              class="card-img-overlay d-flex flex-column justify-content-end"
+            >
               <h4 class="mb-2">摩洛哥迷幻之旅</h4>
-              <p class="mb-7">漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。</p>
+              <p class="mb-7">
+                漫步沙漠與古城之間，探索千年文化與色彩繽紛的市集風情。
+              </p>
               <div class="recommend-btn">
-                <button type="button" class="btn btn-light p-6 rounded-pill d-flex justify-content-between w-100">
+                <button
+                  type="button"
+                  class="btn btn-light p-6 rounded-pill d-flex justify-content-between w-100"
+                >
                   訂購行程
-                  <span class="material-icons-outlined align-middle ms-2">arrow_forward</span>
+                  <span class="material-icons-outlined align-middle ms-2"
+                    >arrow_forward</span
+                  >
                 </button>
               </div>
             </div>
-          </div>        
+          </div>
         </div>
       </section>
 
       <section class="index-section3-bg position-relative">
         <div class="container py-10 py-md-12">
-          <div class="row flex-md-row-reverse justify-content-between align-items-md-center">
+          <div
+            class="row flex-md-row-reverse justify-content-between align-items-md-center"
+          >
             <!-- 文字 -->
             <div class="col-md-4 mb-10 d-flex justify-content-md-end">
               <div>
-                <h3 class="text-primary fw-bold fs-3 fs-md-0 mb-7">ZOBAA!<br>踏上旅程的<br>第一站</h3>
-                <p class="text-primary-60 fw-bold lh-base fs-8 fs-md-6">探索最熱門的旅遊主題，<br>從旅人必備攻略到獨家優惠，<br>從旅人必備攻略到獨家優惠，</p>
+                <h3 class="text-primary fw-bold fs-3 fs-md-0 mb-7">
+                  ZOBAA!<br />踏上旅程的<br />第一站
+                </h3>
+                <p class="text-primary-60 fw-bold lh-base fs-8 fs-md-6">
+                  探索最熱門的旅遊主題，<br />從旅人必備攻略到獨家優惠，<br />從旅人必備攻略到獨家優惠，
+                </p>
               </div>
             </div>
             <!-- 卡片區塊 -->
@@ -130,401 +240,776 @@
                 <!-- 卡片1 -->
                 <div class="col-md-6 mb-5 mb-md-6">
                   <div class="card rounded-5 overflow-hidden border-neutral-40">
-                    <img src="../assets/images/index/intro-1.png" class="card-img-top" alt="ZOBAA 專屬推薦行程">
+                    <img
+                      src="../assets/images/index/intro-1.png"
+                      class="card-img-top"
+                      alt="ZOBAA 專屬推薦行程"
+                    />
                     <div class="card-body p-7">
                       <h4 class="fw-bold fs-6 mb-2">ZOBAA 專屬推薦行程</h4>
-                      <p class="text-neutral-80 lh-base fs-7">嚴選深度行程，豐富旅行靈感</p>
+                      <p class="text-neutral-80 lh-base fs-7">
+                        嚴選深度行程，豐富旅行靈感
+                      </p>
                     </div>
-                  </div>                
+                  </div>
                 </div>
                 <!-- 卡片2 -->
                 <div class="col-md-6 mb-5 mb-md-6">
                   <div class="card rounded-5 overflow-hidden border-neutral-40">
-                    <img src="../assets/images/index/intro-2.png" class="card-img-top" alt="旅人攻略集合">
+                    <img
+                      src="../assets/images/index/intro-2.png"
+                      class="card-img-top"
+                      alt="旅人攻略集合"
+                    />
                     <div class="card-body p-7">
                       <h4 class="fw-bold fs-6 mb-2">旅人攻略集合</h4>
-                      <p class="text-neutral-80 lh-base fs-7">景點、交通、私房景點一次掌握</p>
+                      <p class="text-neutral-80 lh-base fs-7">
+                        景點、交通、私房景點一次掌握
+                      </p>
                     </div>
-                  </div>                
+                  </div>
                 </div>
               </div>
               <div class="row offset-row">
                 <!-- 卡片3 -->
                 <div class="col-md-6 mb-5 mb-md-6">
                   <div class="card rounded-5 overflow-hidden border-neutral-40">
-                    <img src="../assets/images/index/intro-3.png" class="card-img-top" alt="優惠機票、酒店">
+                    <img
+                      src="../assets/images/index/intro-3.png"
+                      class="card-img-top"
+                      alt="優惠機票、酒店"
+                    />
                     <div class="card-body p-7">
                       <h4 class="fw-bold fs-6 mb-2">優惠機票、酒店</h4>
-                      <p class="text-neutral-80 lh-base fs-7">即時比價，聰明出發不踩雷</p>
+                      <p class="text-neutral-80 lh-base fs-7">
+                        即時比價，聰明出發不踩雷
+                      </p>
                     </div>
-                  </div>                
+                  </div>
                 </div>
                 <!-- 卡片4 -->
                 <div class="col-md-6 mb-5 mb-md-6">
                   <div class="card rounded-5 overflow-hidden border-neutral-40">
-                    <img src="../assets/images/index/intro-4.png" class="card-img-top" alt="銀行專屬優惠">
+                    <img
+                      src="../assets/images/index/intro-4.png"
+                      class="card-img-top"
+                      alt="銀行專屬優惠"
+                    />
                     <div class="card-body p-7">
                       <h4 class="fw-bold fs-6 mb-2">銀行專屬優惠</h4>
-                      <p class="text-neutral-80 lh-base fs-7">使用指定卡別享受獨家旅遊好康</p>
+                      <p class="text-neutral-80 lh-base fs-7">
+                        使用指定卡別享受獨家旅遊好康
+                      </p>
                     </div>
-                  </div>                
-                </div>              
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <img src="../assets/images/index/deco-text.svg" alt="decor" class="position-absolute z-n1 d-none d-md-block" style="bottom: 360px; left: 80px;">
+        <img
+          src="../assets/images/index/deco-text.svg"
+          alt="decor"
+          class="position-absolute z-n1 d-none d-md-block"
+          style="bottom: 360px; left: 80px"
+        />
       </section>
 
       <section class="position-relative">
-        <div style="margin-bottom: -4px;"><img src="../assets/images/index/BG_Section.svg" alt="" class="img-fluid w-100 object-fit-cover"></div>
+        <div style="margin-bottom: -4px">
+          <img
+            src="../assets/images/index/BG_Section.svg"
+            alt=""
+            class="img-fluid w-100 object-fit-cover"
+          />
+        </div>
         <div class="bg-primary-10">
-          <div class="py-md-12 py-10">            
-            <div class="swiper">              
+          <div class="py-md-12 py-10">
+            <div class="swiper">
               <!-- 文字 -->
-              <div class="container d-md-flex justify-content-md-between align-items-md-center">
+              <div
+                class="container d-md-flex justify-content-md-between align-items-md-center"
+              >
                 <div class="mb-7">
-                  <h3 class="mb-7 fw-bold fs-3 fs-md-0 text-primary">今年旅行的<br>靈感地圖</h3>
+                  <h3 class="mb-7 fw-bold fs-3 fs-md-0 text-primary">
+                    今年旅行的<br />靈感地圖
+                  </h3>
                   <div class="d-flex overflow-x-auto">
-                    <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary me-2 flex-shrink-0 d-block">全部</button>
-                    <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block">亞洲</button>
-                    <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block">歐洲</button>
-                    <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block">美洲</button>
-                    <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block">大洋洲</button>
-                    <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block">非洲</button>
+                    <button
+                      type="button"
+                      class="fw-bold lh-base py-2 px-5 btn btn-primary me-2 flex-shrink-0 d-block"
+                    >
+                      全部
+                    </button>
+                    <button
+                      type="button"
+                      class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block"
+                    >
+                      亞洲
+                    </button>
+                    <button
+                      type="button"
+                      class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block"
+                    >
+                      歐洲
+                    </button>
+                    <button
+                      type="button"
+                      class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block"
+                    >
+                      美洲
+                    </button>
+                    <button
+                      type="button"
+                      class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block"
+                    >
+                      大洋洲
+                    </button>
+                    <button
+                      type="button"
+                      class="fw-bold lh-base py-2 px-5 btn btn-light text-primary me-2 flex-shrink-0 d-block"
+                    >
+                      非洲
+                    </button>
                   </div>
                 </div>
-                <div class="d-md-flex flex-md-column justify-content-end align-items-end">
-                  <p class="fw-bold lh-base fs-8 fs-md-6 text-primary mb-7">來自旅人搜尋、收藏與討論最多的目的地排行榜，<br>一場風格與故事感兼具的靈感旅行，就從這裡開始。</p>
+                <div
+                  class="d-md-flex flex-md-column justify-content-end align-items-end"
+                >
+                  <p class="fw-bold lh-base fs-8 fs-md-6 text-primary mb-7">
+                    來自旅人搜尋、收藏與討論最多的目的地排行榜，<br />一場風格與故事感兼具的靈感旅行，就從這裡開始。
+                  </p>
                   <div class="d-flex gap-2">
-                    <button type="button" class="btn btn-light d-none d-md-block p-5 rounded-4 swiper-btn-prev"><span class="material-icons-outlined align-middle text-primary">arrow_back</span></button>
-  
-                    <button type="button" class="btn btn-light d-none d-md-block p-5 rounded-4 swiper-btn-next"><span class="material-icons-outlined align-middle text-primary">arrow_forward</span></button>
+                    <button
+                      type="button"
+                      class="btn btn-light d-none d-md-block p-5 rounded-4 swiper-btn-prev"
+                    >
+                      <span
+                        class="material-icons-outlined align-middle text-primary"
+                        >arrow_back</span
+                      >
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-light d-none d-md-block p-5 rounded-4 swiper-btn-next"
+                    >
+                      <span
+                        class="material-icons-outlined align-middle text-primary"
+                        >arrow_forward</span
+                      >
+                    </button>
                   </div>
-                </div>                             
-              </div>              
+                </div>
+              </div>
               <!-- 卡片欄位 -->
-              <div class="container-lg swiper-wrapper d-flex gap-md-7 gap-5 flex-nowrap">
+              <div
+                class="container-lg swiper-wrapper d-flex gap-md-7 gap-5 flex-nowrap"
+              >
                 <div class="swiper-slide col">
                   <div class="horizontal-cardlayer">
-                    <div class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0">
+                    <div
+                      class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0"
+                    >
                       <p class="poppins-regular-italic">1</p>
                       <div class="flex-md-shrink-1">
-                        <img src="../assets/images/index/map-1.png" class=" card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9" alt="走進四季交織的文化時光">
+                        <img
+                          src="../assets/images/index/map-1.png"
+                          class="card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9"
+                          alt="走進四季交織的文化時光"
+                        />
                       </div>
                       <div class="card-body p-0">
                         <div class="d-flex flex-column gap-7 gap-md-10">
                           <div>
                             <div class="mb-2">
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7">亞洲</button> 
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7">日本京都</button> 
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7"
+                              >
+                                亞洲
+                              </button>
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7"
+                              >
+                                日本京都
+                              </button>
                             </div>
-                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">走進四季交織的文化時光</h4>
-                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。</p>
-                          </div>
-                          <div class="d-md-flex align-items-md-center gap-md-4">
-                            <span class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0">ZOBAA 建議</span>
-                            <p class="text-primary lh-base fs-8 fs-md-7">
-                              賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶 🍁
+                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">
+                              走進四季交織的文化時光
+                            </h4>
+                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">
+                              穿過紅葉與古寺的交錯，感受從櫻花盛開到秋楓染紅的日式浪漫。
                             </p>
                           </div>
-                          <button type="button" class="btn btn-black rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0">
+                          <div class="d-md-flex align-items-md-center gap-md-4">
+                            <span
+                              class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0"
+                              >ZOBAA 建議</span
+                            >
+                            <p class="text-primary lh-base fs-8 fs-md-7">
+                              賞楓最佳時間是 11 月中旬，推薦清水寺和南禪寺一帶
+                              🍁
+                            </p>
+                          </div>
+                          <button
+                            type="button"
+                            class="btn btn-dark rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0"
+                          >
                             立即探索魅力古都
                             <span class="badge bg-light rounded-pill p-2">
-                              <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                              <span
+                                class="material-icons-outlined align-middle text-black"
+                                >arrow_forward</span
+                              >
                             </span>
-                          </button>                  
+                          </button>
                         </div>
-                      </div>              
+                      </div>
                     </div>
-                  </div>                  
+                  </div>
                 </div>
                 <div class="swiper-slide col">
                   <div class="horizontal-cardlayer">
-                    <div class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0">
+                    <div
+                      class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0"
+                    >
                       <p class="poppins-regular-italic">2</p>
                       <div class="flex-md-shrink-1">
-                        <img src="../assets/images/index/map-2.png" class=" card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9" alt="從街邊美食到韓劇場景">
+                        <img
+                          src="../assets/images/index/map-2.png"
+                          class="card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9"
+                          alt="從街邊美食到韓劇場景"
+                        />
                       </div>
                       <div class="card-body p-0">
                         <div class="d-flex flex-column gap-7 gap-md-10">
                           <div>
                             <div class="mb-2">
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7">亞洲</button> 
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7">南韓首爾</button> 
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7"
+                              >
+                                亞洲
+                              </button>
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7"
+                              >
+                                南韓首爾
+                              </button>
                             </div>
-                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">從街邊美食到韓劇場景</h4>
-                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。</p>
+                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">
+                              從街邊美食到韓劇場景
+                            </h4>
+                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">
+                              白天在弘大小巷探店，夜晚登上南山塔俯瞰整座城市的閃爍。
+                            </p>
                           </div>
                           <div class="d-md-flex align-items-md-center gap-md-4">
-                            <span class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0">ZOBAA 建議</span>
+                            <span
+                              class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0"
+                              >ZOBAA 建議</span
+                            >
                             <p class="text-primary lh-base fs-8 fs-md-7">
                               弘大周邊週五傍晚最熱鬧，小吃與街頭藝人齊發✨
                             </p>
                           </div>
-                          <button type="button" class="btn btn-black rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0">
+                          <button
+                            type="button"
+                            class="btn btn-dark rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0"
+                          >
                             感受韓系風格日常
                             <span class="badge bg-light rounded-pill p-2">
-                              <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                              <span
+                                class="material-icons-outlined align-middle text-black"
+                                >arrow_forward</span
+                              >
                             </span>
-                          </button>                  
+                          </button>
                         </div>
-                      </div>              
+                      </div>
                     </div>
-                  </div>            
+                  </div>
                 </div>
                 <div class="swiper-slide col">
                   <div class="horizontal-cardlayer">
-                    <div class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0">
+                    <div
+                      class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0"
+                    >
                       <p class="poppins-regular-italic">3</p>
                       <div class="flex-md-shrink-1">
-                        <img src="../assets/images/index/map-3.png" class=" card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9" alt="在藝術與咖啡香中迷路">
+                        <img
+                          src="../assets/images/index/map-3.png"
+                          class="card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9"
+                          alt="在藝術與咖啡香中迷路"
+                        />
                       </div>
                       <div class="card-body p-0">
                         <div class="d-flex flex-column gap-7 gap-md-10">
                           <div>
                             <div class="mb-2">
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7">歐洲</button> 
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7">法國巴黎</button> 
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7"
+                              >
+                                歐洲
+                              </button>
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7"
+                              >
+                                法國巴黎
+                              </button>
                             </div>
-                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">在藝術與咖啡香中迷路</h4>
-                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。</p>
+                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">
+                              在藝術與咖啡香中迷路
+                            </h4>
+                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">
+                              穿梭左岸書店與畫廊，任由麵包香與建築細節擁抱你的步伐。
+                            </p>
                           </div>
                           <div class="d-md-flex align-items-md-center gap-md-4">
-                            <span class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0">ZOBAA 建議</span>
+                            <span
+                              class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0"
+                              >ZOBAA 建議</span
+                            >
                             <p class="text-primary lh-base fs-8 fs-md-7">
                               走進瑪黑區，最容易與巴黎風格不期而遇 ☕️
                             </p>
                           </div>
-                          <button type="button" class="btn btn-black rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0">
+                          <button
+                            type="button"
+                            class="btn btn-dark rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0"
+                          >
                             開啟我的巴黎冒險
                             <span class="badge bg-light rounded-pill p-2">
-                              <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                              <span
+                                class="material-icons-outlined align-middle text-black"
+                                >arrow_forward</span
+                              >
                             </span>
-                          </button>                  
+                          </button>
                         </div>
-                      </div>              
+                      </div>
                     </div>
-                  </div>       
+                  </div>
                 </div>
                 <div class="swiper-slide col">
                   <div class="horizontal-cardlayer">
-                    <div class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0">
+                    <div
+                      class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0"
+                    >
                       <p class="poppins-regular-italic">4</p>
                       <div class="flex-md-shrink-1">
-                        <img src="../assets/images/index/map-4.png" class=" card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9" alt="城市與大自然的交會">
+                        <img
+                          src="../assets/images/index/map-4.png"
+                          class="card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9"
+                          alt="城市與大自然的交會"
+                        />
                       </div>
                       <div class="card-body p-0">
                         <div class="d-flex flex-column gap-7 gap-md-10">
                           <div>
                             <div class="mb-2">
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7">大洋洲</button> 
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7">澳洲雪梨</button> 
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7"
+                              >
+                                大洋洲
+                              </button>
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7"
+                              >
+                                澳洲雪梨
+                              </button>
                             </div>
-                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">城市與大自然的交會</h4>
-                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。</p>
+                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">
+                              城市與大自然的交會
+                            </h4>
+                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">
+                              清晨在海灘做瑜珈，午後漫步歌劇院，享受城市的節奏與野性的呼喚。
+                            </p>
                           </div>
                           <div class="d-md-flex align-items-md-center gap-md-4">
-                            <span class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0">ZOBAA 建議</span>
+                            <span
+                              class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0"
+                              >ZOBAA 建議</span
+                            >
                             <p class="text-primary lh-base fs-8 fs-md-7">
                               別錯過傍晚在雪梨港看日落＋欣賞歌劇院夜燈 ✨
                             </p>
                           </div>
-                          <button type="button" class="btn btn-black rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0">
+                          <button
+                            type="button"
+                            class="btn btn-dark rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0"
+                          >
                             現在就飛向南半球
                             <span class="badge bg-light rounded-pill p-2">
-                              <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                              <span
+                                class="material-icons-outlined align-middle text-black"
+                                >arrow_forward</span
+                              >
                             </span>
-                          </button>                  
+                          </button>
                         </div>
-                      </div>              
+                      </div>
                     </div>
-                  </div>            
+                  </div>
                 </div>
                 <div class="swiper-slide col">
                   <div class="horizontal-cardlayer">
-                    <div class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0">
+                    <div
+                      class="card horizontal-md-card p-5 rounded-6 border border-0 flex-md-row position-relative flex-shrink-0"
+                    >
                       <p class="poppins-regular-italic">5</p>
                       <div class="flex-md-shrink-1">
-                        <img src="../assets/images/index/map-5.png" class=" card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9" alt="穿越千年時光的沙漠冒險">
+                        <img
+                          src="../assets/images/index/map-5.png"
+                          class="card-img-top rounded-5 object-fit-cover mb-2 mb-md-0 me-md-9"
+                          alt="穿越千年時光的沙漠冒險"
+                        />
                       </div>
                       <div class="card-body p-0">
                         <div class="d-flex flex-column gap-7 gap-md-10">
                           <div>
                             <div class="mb-2">
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7">非洲</button> 
-                              <button type="button" class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7">埃及開羅</button> 
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary me-2 fs-8 fs-md-7"
+                              >
+                                非洲
+                              </button>
+                              <button
+                                type="button"
+                                class="fw-bold lh-base py-2 px-5 btn btn-primary-10 text-primary fs-8 fs-md-7"
+                              >
+                                埃及開羅
+                              </button>
                             </div>
-                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">穿越千年時光的沙漠冒險</h4>
-                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。</p>
+                            <h4 class="fw-bold fs-3 fs-md-1 mb-2">
+                              穿越千年時光的沙漠冒險
+                            </h4>
+                            <p class="text-neutral-80 lh-base fs-8 fs-md-7">
+                              乘著駱駝走過古老遺跡，抬頭仰望太陽神的光芒，在歷史與傳說之間迷失。
+                            </p>
                           </div>
                           <div class="d-md-flex align-items-md-center gap-md-4">
-                            <span class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0">ZOBAA 建議</span>
+                            <span
+                              class="badge bg-primary-10 p-2 fw-bold fs-8 fs-md-7 lh-base rounded-3 text-primary mb-2 mb-md-0"
+                              >ZOBAA 建議</span
+                            >
                             <p class="text-primary lh-base fs-8 fs-md-7">
                               建議早上 8 點前到吉薩金字塔，避開人潮與烈日 ☀️
                             </p>
                           </div>
-                          <button type="button" class="btn btn-black rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0">
+                          <button
+                            type="button"
+                            class="btn btn-dark rounded-pill px-6 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs-8 fs-md-7 border-0"
+                          >
                             揭開古文明的面紗
                             <span class="badge bg-light rounded-pill p-2">
-                              <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                              <span
+                                class="material-icons-outlined align-middle text-black"
+                                >arrow_forward</span
+                              >
                             </span>
-                          </button>                  
+                          </button>
                         </div>
-                      </div>              
+                      </div>
                     </div>
-                  </div>          
+                  </div>
                 </div>
               </div>
               <!-- 手機滑動 -->
-              <div class="swiper-pagination position-static d-md-none mt-10"></div>
-            </div>          
+              <div
+                class="swiper-pagination position-static d-md-none mt-10"
+              ></div>
+            </div>
           </div>
         </div>
-        <div style="margin-top: -8px;"><img src="../assets/images/index/BG_Section-1.svg" alt="" class="img-fluid w-100 object-fit-cover">
+        <div style="margin-top: -8px">
+          <img
+            src="../assets/images/index/BG_Section-1.svg"
+            alt=""
+            class="img-fluid w-100 object-fit-cover"
+          />
         </div>
         <!-- 標題小標籤 -->
-        <img src="../assets/images/index/deco-text-1.svg" alt="ZOBAA年度榜" class="position-absolute text-dialog">
-
+        <img
+          src="../assets/images/index/deco-text-1.svg"
+          alt="ZOBAA年度榜"
+          class="position-absolute text-dialog"
+        />
       </section>
 
       <section class="py-10 py-md-12 overflow-hidden">
         <div class="container position-relative">
           <!-- 標題 -->
           <div class="position-relative mb-10 mb-md-11">
-            <h3 class="fw-bold fs-3 fs-md-0 text-primary">搜尋墨爾本嗎？<br>來點行程參考！</h3>
-            <img src="../assets/images/index/bg-hash.svg" alt="" class="position-absolute z-n1 img-hash">
+            <h3 class="fw-bold fs-3 fs-md-0 text-primary">
+              搜尋墨爾本嗎？<br />來點行程參考！
+            </h3>
+            <img
+              src="../assets/images/index/bg-hash.svg"
+              alt=""
+              class="position-absolute z-n1 img-hash"
+            />
           </div>
           <!-- 卡片區塊 -->
           <div class="d-flex gap-7 overflow-x-auto">
             <!-- 卡片1 -->
             <div class="fixed-card d-flex flex-column gap-5 flex-shrink-0">
               <div class="position-relative">
-                <img src="../assets/images/index/journey-1.png" alt="【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊" class="img-fluid rounded-5">
-                <span class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5">favorite_border</span>
+                <img
+                  src="../assets/images/index/journey-1.png"
+                  alt="【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊"
+                  class="img-fluid rounded-5"
+                />
+                <button type="button" class="fixed-card-btn">
+                  <span
+                    class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5"
+                    >favorite_border
+                  </span>
+                </button>
               </div>
               <div class="d-flex gap-2 flex-column align-items-start">
-                <div style="height: 48px;">
-                  <h4 class="fw-bold fs-7 lh-base">【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊</h4>
+                <div style="height: 48px">
+                  <h4 class="fw-bold fs-7 lh-base">
+                    【獨家優惠】布萊頓彩色小屋＋森林蒸汽火車一日遊
+                  </h4>
                 </div>
                 <div class="d-flex gap-2">
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">即買即用</button>
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">5 天前可免費取消</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    即買即用
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    5 天前可免費取消
+                  </button>
                 </div>
                 <div class="d-flex">
-                  <div class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center">
-                    <img src="../assets/images/index/star.svg" alt="">
+                  <div
+                    class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center"
+                  >
+                    <img src="../assets/images/index/star.svg" alt="" />
                     <p class="fs-8 lh-base text-neutral-80">4.2</p>
                     <p class="fs-8 lh-base text-neutral-60">(333)</p>
                   </div>
-                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">500+ 個已訂購</p>
+                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">
+                    500+ 個已訂購
+                  </p>
                 </div>
-
               </div>
-              <hr class="m-0 text-neutral-40 opacity-100">
+              <hr class="m-0 text-neutral-40 opacity-100" />
               <div>
                 <h5 class="fw-bold fs-6 text-primary">NT$ 4,220</h5>
-                <p class="fs-7 lh-base text-neutral-60 text-decoration-line-through">NT$ 5,220</p>
+                <p
+                  class="fs-7 lh-base text-neutral-60 text-decoration-line-through"
+                >
+                  NT$ 5,220
+                </p>
               </div>
             </div>
             <!-- 卡片2 -->
             <div class="fixed-card d-flex flex-column gap-5 flex-shrink-0">
               <div class="position-relative">
-                <img src="../assets/images/index/journey-2.png" alt="無尾熊動物園＋企鵝歸巢雙享之旅" class="img-fluid rounded-5">
-                <span class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5">favorite_border</span>
+                <img
+                  src="../assets/images/index/journey-2.png"
+                  alt="無尾熊動物園＋企鵝歸巢雙享之旅"
+                  class="img-fluid rounded-5"
+                />
+                <button type="button" class="fixed-card-btn">
+                  <span
+                    class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5"
+                    >favorite_border
+                  </span>
+                </button>
               </div>
               <div class="d-flex gap-2 flex-column align-items-start">
-                <div style="height: 48px;">
-                  <h4 class="fw-bold fs-7 lh-base">無尾熊動物園＋企鵝歸巢雙享之旅</h4>
+                <div style="height: 48px">
+                  <h4 class="fw-bold fs-7 lh-base">
+                    無尾熊動物園＋企鵝歸巢雙享之旅
+                  </h4>
                 </div>
                 <div class="d-flex gap-2">
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">即買即用</button>
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">7 天前可免費取消</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    即買即用
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    7 天前可免費取消
+                  </button>
                 </div>
                 <div class="d-flex">
-                  <div class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center">
-                    <img src="../assets/images/index/star.svg" alt="">
+                  <div
+                    class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center"
+                  >
+                    <img src="../assets/images/index/star.svg" alt="" />
                     <p class="fs-8 lh-base text-neutral-80">4.2</p>
                     <p class="fs-8 lh-base text-neutral-60">(333)</p>
                   </div>
-                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">500+ 個已訂購</p>
+                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">
+                    500+ 個已訂購
+                  </p>
                 </div>
-
               </div>
-              <hr class="m-0 text-neutral-40 opacity-100">
+              <hr class="m-0 text-neutral-40 opacity-100" />
               <div>
                 <h5 class="fw-bold fs-6 text-primary">NT$ 3,890</h5>
-                <p class="fs-7 lh-base text-neutral-60 text-decoration-line-through">NT$ 4,920</p>
+                <p
+                  class="fs-7 lh-base text-neutral-60 text-decoration-line-through"
+                >
+                  NT$ 4,920
+                </p>
               </div>
             </div>
             <!-- 卡片3 -->
             <div class="fixed-card d-flex flex-column gap-5 flex-shrink-0">
               <div class="position-relative">
-                <img src="../assets/images/index/journey-3.png" alt="大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線" class="img-fluid rounded-5">
-                <span class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5">favorite_border</span>
+                <img
+                  src="../assets/images/index/journey-3.png"
+                  alt="大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線"
+                  class="img-fluid rounded-5"
+                />
+                <button type="button" class="fixed-card-btn">
+                  <span
+                    class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5"
+                    >favorite_border
+                  </span>
+                </button>
               </div>
               <div class="d-flex gap-2 flex-column align-items-start">
-                <div style="height: 48px;">
-                  <h4 class="fw-bold fs-7 lh-base">大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線</h4>
+                <div style="height: 48px">
+                  <h4 class="fw-bold fs-7 lh-base">
+                    大洋路經典一日遊｜中文導覽！體驗澳洲最夢幻的海岸線
+                  </h4>
                 </div>
                 <div class="d-flex gap-2">
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">中文導覽</button>
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">5 天前可免費取消</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    中文導覽
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    5 天前可免費取消
+                  </button>
                 </div>
                 <div class="d-flex">
-                  <div class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center">
-                    <img src="../assets/images/index/star.svg" alt="">
+                  <div
+                    class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center"
+                  >
+                    <img src="../assets/images/index/star.svg" alt="" />
                     <p class="fs-8 lh-base text-neutral-80">4.2</p>
                     <p class="fs-8 lh-base text-neutral-60">(333)</p>
                   </div>
-                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">500+ 個已訂購</p>
+                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">
+                    500+ 個已訂購
+                  </p>
                 </div>
-
               </div>
-              <hr class="m-0 text-neutral-40 opacity-100">
+              <hr class="m-0 text-neutral-40 opacity-100" />
               <div>
                 <h5 class="fw-bold fs-6 text-primary">NT$ 3,690</h5>
-                <p class="fs-7 lh-base text-neutral-60 text-decoration-line-through">NT$ 4,500</p>
+                <p
+                  class="fs-7 lh-base text-neutral-60 text-decoration-line-through"
+                >
+                  NT$ 4,500
+                </p>
               </div>
             </div>
             <!-- 卡片4-->
             <div class="fixed-card d-flex flex-column gap-5 flex-shrink-0">
               <div class="position-relative">
-                <img src="../assets/images/index/journey-4.png" alt="墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照" class="img-fluid rounded-5">
-                <span class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5">favorite_border</span>
+                <img
+                  src="../assets/images/index/journey-4.png"
+                  alt="墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照"
+                  class="img-fluid rounded-5"
+                />
+                <button type="button" class="fixed-card-btn">
+                  <span
+                    class="material-icons-outlined position-absolute top-0 end-0 text-neutral-40 p-5"
+                    >favorite_border
+                  </span>
+                </button>
               </div>
               <div class="d-flex gap-2 flex-column align-items-start">
-                <div style="height: 48px;">
-                  <h4 class="fw-bold fs-7 lh-base">墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照</h4>
+                <div style="height: 48px">
+                  <h4 class="fw-bold fs-7 lh-base">
+                    墨爾本市區導覽｜壁畫巷＋隱藏咖啡廳之旅，體驗本地咖啡文化、隱藏小巷拍照
+                  </h4>
                 </div>
                 <div class="d-flex gap-2">
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">專業導覽</button>
-                  <button type="button" class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3">3 天前可免費取消</button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    專業導覽
+                  </button>
+                  <button
+                    type="button"
+                    class="btn btn-primary-10 text-primary lh-base fs-8 rounded-3"
+                  >
+                    3 天前可免費取消
+                  </button>
                 </div>
                 <div class="d-flex">
-                  <div class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center">
-                    <img src="../assets/images/index/star.svg" alt="">
+                  <div
+                    class="d-flex gap-1 pe-4 border-end border-neutral-40 align-items-center"
+                  >
+                    <img src="../assets/images/index/star.svg" alt="" />
                     <p class="fs-8 lh-base text-neutral-80">4.2</p>
                     <p class="fs-8 lh-base text-neutral-60">(333)</p>
                   </div>
-                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">500+ 個已訂購</p>
+                  <p class="d-block ps-4 fs-8 lh-base text-neutral-80">
+                    500+ 個已訂購
+                  </p>
                 </div>
-
               </div>
-              <hr class="m-0 text-neutral-40 opacity-100">
+              <hr class="m-0 text-neutral-40 opacity-100" />
               <div>
                 <h5 class="fw-bold fs-6 text-primary">NT$ 1,280</h5>
-                <p class="fs-7 lh-base text-neutral-60 text-decoration-line-through">NT$ 2,480</p>
+                <p
+                  class="fs-7 lh-base text-neutral-60 text-decoration-line-through"
+                >
+                  NT$ 2,480
+                </p>
               </div>
             </div>
-          </div> 
+          </div>
           <!-- 懸浮按鈕 -->
-          <button type="button" class="btn btn-light d-none d-md-block p-5 rounded-4 shadow position-absolute fixed-card-btn fixed-card-btn-left d-md-block d-none">
-            <span class="material-icons-outlined align-middle text-primary">arrow_back</span>
+          <button
+            type="button"
+            class="btn btn-light d-none d-md-block p-5 rounded-4 shadow position-absolute fixed-card-btn fixed-card-btn-left d-md-block d-none"
+          >
+            <span class="material-icons-outlined align-middle text-primary"
+              >arrow_back</span
+            >
           </button>
-          <button type="button" class="btn btn-light d-none d-md-block p-5 rounded-4 shadow position-absolute fixed-card-btn fixed-card-btn-right d-md-block d-none">
-            <span class="material-icons-outlined align-middle text-primary">arrow_forward</span>
-          </button> 
+          <button
+            type="button"
+            class="btn btn-light d-none d-md-block p-5 rounded-4 shadow position-absolute fixed-card-btn fixed-card-btn-right d-md-block d-none"
+          >
+            <span class="material-icons-outlined align-middle text-primary"
+              >arrow_forward</span
+            >
+          </button>
         </div>
       </section>
       <div class="marquee d-flex">
@@ -533,52 +1018,99 @@
 
       <section class="bg-primary-40 position-relative overflow-hidden">
         <!-- 背景 -->
-        <img src="../assets/images/index/bg-up.svg" alt="" class="position-absolute z-3 d-none d-md-block" style="top: -30%; right: 70%;">
-        <img src="../assets/images/index/bg-line.svg" alt="" class="position-absolute top-50 start-50 translate-middle-x z-1 d-none d-md-block">
-        <img src="../assets/images/index/bg-down.svg" alt="" class="position-absolute translate-middle z-1 d-none d-md-block" style="top: 110%; left: 70%;">
-        <!-- 內容 -->      
+        <img
+          src="../assets/images/index/bg-up.svg"
+          alt=""
+          class="position-absolute z-3 d-none d-md-block"
+          style="top: -30%; right: 70%"
+        />
+        <img
+          src="../assets/images/index/bg-line.svg"
+          alt=""
+          class="position-absolute top-50 start-50 translate-middle-x z-1 d-none d-md-block"
+        />
+        <img
+          src="../assets/images/index/bg-down.svg"
+          alt=""
+          class="position-absolute translate-middle z-1 d-none d-md-block"
+          style="top: 110%; left: 70%"
+        />
+        <!-- 內容 -->
         <div class="container py-10 py-md-12 position-relative z-2">
-          <img src="../assets/images/index/card.png" alt="" class="img-fluid mb-2 mb-md-7">
-          <div class="rounded-6 p-7 p-md-9 d-flex flex-column flex-md-row justify-content-md-between" 
-          style="background-color: rgba(243, 238, 236, 0.8);">
+          <img
+            src="../assets/images/index/card.png"
+            alt=""
+            class="img-fluid mb-2 mb-md-7"
+          />
+          <div
+            class="rounded-6 p-7 p-md-9 d-flex flex-column flex-md-row justify-content-md-between"
+            style="background-color: rgba(243, 238, 236, 0.8)"
+          >
             <!-- 文字 -->
             <div class="d-flex gap-md-7 gap-5 flex-column align-items-start">
-              <h3 class="text-primary fw-bold fs-md-1 fs-5">為什麼選擇 ZOBAA ?</h3>
-              <p class="text-neutral-80 fs-md-7 fs-8 lh-base">不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br>ZOBAA 希望你能放心探索世界，把記憶留給旅程本身。</p>
-              <button type="button" class="btn btn-black rounded-pill px-9 py-7 d-flex justify-content-between align-items-center fw-bold lh-base fs-md-6 border-0 lh-base d-md-block d-none">
+              <h3 class="text-primary fw-bold fs-md-1 fs-5">
+                為什麼選擇 ZOBAA ?
+              </h3>
+              <p class="text-neutral-80 fs-md-7 fs-8 lh-base">
+                不只是帶你抵達目的地，更在每一次出發前，替你預想所有細節。<br />ZOBAA
+                希望你能放心探索世界，把記憶留給旅程本身。
+              </p>
+              <button
+                type="button"
+                class="btn btn-dark rounded-pill px-9 py-7 d-flex justify-content-between align-items-center fw-bold lh-base fs-md-6 border-0 lh-base d-md-block d-none"
+              >
                 立即探索我們的精心旅程
                 <span class="badge bg-light rounded-pill p-2 ms-5">
-                  <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                  <span class="material-icons-outlined align-middle text-black"
+                    >arrow_forward</span
+                  >
                 </span>
-              </button>                  
+              </button>
             </div>
             <!-- 白色卡片 -->
-            <div class="d-flex gap-5 flex-column flex-md-row mt-7 mb-md-0 col-md-6">
-              <div class="bg-light w-100 rounded-5 d-flex flex-column justify-content-center p-7 p-md-9">
-                <h4 class="text-primary fw-bold fs-md-1 fs-3 mb-2">8 年<span class="material-icons-outlined align-top fw-bold fs-3">add</span></h4>
+            <div
+              class="d-flex gap-5 flex-column flex-md-row mt-7 mb-md-0 col-md-6"
+            >
+              <div
+                class="bg-light w-100 rounded-5 d-flex flex-column justify-content-center p-7 p-md-9"
+              >
+                <h4 class="text-primary fw-bold fs-md-1 fs-3 mb-2">
+                  8 年<span
+                    class="material-icons-outlined align-top fw-bold fs-3"
+                    >add</span
+                  >
+                </h4>
                 <p class="fw-bold text-primary-80 fs-md-6 fs-7">旅遊企劃經驗</p>
               </div>
-              <div class="bg-light w-100 rounded-5 d-flex flex-column justify-content-center p-7 p-md-9">
-                <h4 class="text-primary fw-bold fs-md-1 fs-3 mb-2">30,000<span class="material-icons-outlined align-top fw-bold fs-3">add</span></h4>
+              <div
+                class="bg-light w-100 rounded-5 d-flex flex-column justify-content-center p-7 p-md-9"
+              >
+                <h4 class="text-primary fw-bold fs-md-1 fs-3 mb-2">
+                  30,000<span
+                    class="material-icons-outlined align-top fw-bold fs-3"
+                    >add</span
+                  >
+                </h4>
                 <p class="fw-bold text-primary-80 fs-md-6 fs-7">旅人五星好評</p>
               </div>
             </div>
             <!-- 手機版按鈕 -->
-            <button type="button" class="btn btn-black rounded-pill px-7 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs--8 border-0 lh-base d-md-none d-block mt-7">
+            <button
+              type="button"
+              class="btn btn-black rounded-pill px-7 py-5 d-flex justify-content-between align-items-center fw-bold lh-base fs--8 border-0 lh-base d-md-none d-block mt-7"
+            >
               立即探索我們的精心旅程
               <span class="badge bg-light rounded-pill p-2 ms-5">
-                <span class="material-icons-outlined align-middle text-black">arrow_forward</span>
+                <span class="material-icons-outlined align-middle text-black"
+                  >arrow_forward</span
+                >
               </span>
-            </button>               
+            </button>
           </div>
-
         </div>
-
-
       </section>
-
     </main>
-    
+
     <%- include('./layout/footer'); -%>
     <script type="module" src="../main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
